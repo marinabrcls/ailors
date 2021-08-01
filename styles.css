@@ -7,7 +7,6 @@
 }
 
 /* HTML TAGS */
-
 body {
     background-color: var(--bg-dark-gray);
     font-family: 'Rubik', sans-serif;
@@ -29,7 +28,6 @@ h4 {
 }
 
 /* IDS */
-
 #footer {
     background-color: var(--bg-dark-gray);
     color: white;
@@ -44,7 +42,6 @@ h4 {
 }
 
 /* CLASSES */
-
 .about {
     padding: 22vh 12vw;
 }
@@ -103,16 +100,34 @@ h4 {
 
 /* RESPONSIVE RULES */
 
-/* Image size adjustments breakpoint */
+/* Images and texts size adjustments breakpoint */
 @media screen and (max-width: 500px) {
+    #footer {
+        font-size: 10pt;
+    }
+
+    .about-text {
+        font-size: 12pt !important;
+    }
+
     .pics, .profile {
         max-width: 300px;
     }
+
+    .profile {
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+    }
+
+    .wrapper {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
 }
 
-@media screen and (max-width: 1320px) {
-    .pics, .profile {
-        width: 450px;
+@media screen and (max-width: 978px) {
+    .about-text {
+        font-size: 14pt;
     }
 }
 
@@ -127,5 +142,15 @@ h4 {
     .video-desktop {
         display: none;
     }
+}
 
+/* Images and texts size adjustments breakpoint */
+@media screen and (max-width: 1320px) {
+    .about-text {
+        font-size: 18pt;
+    }
+
+    .pics, .profile {
+        width: 450px;
+    }
 }
