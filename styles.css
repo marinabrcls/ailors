@@ -59,13 +59,41 @@ p {
     width: 600px;
 }
 
-.video {
-    height: auto;
-    max-width: 100%;
-}
-
 .video-container {
     display: flex;
     height: auto;
     width: 100%;
 }
+
+.video-desktop {
+    height: auto;
+    max-width: 100%;
+}
+
+.video-mobile {
+    display: none;
+}
+
+/* RESPONSIVE RULES */
+
+/* Image size adjustments breakpoint */
+@media screen and (max-width: 1320px) {
+    .profile {
+        width: 450px;
+    }
+}
+
+/* Video breakpoint */
+@media screen and (max-width: 1090px) {
+    .video-mobile {
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .video-desktop {
+        display: none;
+    }
+    
+}
+
