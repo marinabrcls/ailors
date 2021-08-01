@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: red;
+    background-color: var(--bg-dark-gray);
     font-family: 'Rubik', sans-serif;
     margin: 0;
 }
