@@ -19,16 +19,20 @@ h3 {
     color: var(--text-light-gray);
     font-size: 18pt;
     font-weight: 300;
+    margin-bottom: 1vh;
 }
 
 h4 {
     color: var(--text-dark-gray);
     font-size: 12pt;
     font-weight: 300;
+    margin-top: 0;
 }
 
 p {
     font-size: 10pt;
+    line-height: 2em;
+    margin-top: 0;
     padding-right: 1vw;
 }
 
