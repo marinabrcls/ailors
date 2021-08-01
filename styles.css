@@ -1,8 +1,12 @@
 :root {
+    /* Color palette */
     --bg-dark-gray:#3D403F;
     --bg-light-gray: #D2D6D9;
     --text-dark-gray: #262626;
     --text-light-gray: #949AA6;
+    /* Animation settings */
+    --animate-duration: 15s;
+    --animate-delay: 5s;
 }
 
 body {
@@ -39,6 +43,7 @@ p {
     background-color: var(--bg-light-gray);
     width: 100%;
     margin: auto;
+    overflow: hidden;
 }
 
 .bold {
@@ -50,6 +55,10 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.pics {
+    width: 600px;
 }
 
 .profile {
@@ -77,13 +86,19 @@ p {
 /* RESPONSIVE RULES */
 
 /* Image size adjustments breakpoint */
+@media screen and (max-width: 500px) {
+    .pics, .profile {
+        max-width: 300px;
+    }
+}
+
 @media screen and (max-width: 1320px) {
-    .profile {
+    .pics, .profile {
         width: 450px;
     }
 }
 
-/* Video breakpoint */
+/* Video switch breakpoint */
 @media screen and (max-width: 1090px) {
     .video-mobile {
         display: inline-block;
@@ -94,6 +109,5 @@ p {
     .video-desktop {
         display: none;
     }
-    
-}
 
+}
