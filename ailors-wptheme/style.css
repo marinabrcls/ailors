@@ -1,0 +1,165 @@
+/*
+Theme Name: Ailors Wordpress Theme.
+Theme URI: https://ailors.com/
+Description: Theme created exclusively for Ailors.
+Version: 1.0
+Author: Marina Barcelos
+Author URI: https://marinabrcls.github.io/
+*/
+
+:root {
+    /* Color palette */
+    --bg-dark-gray:#3D403F;
+    --bg-light-gray: #D2D6D9;
+    --text-dark-gray: #262626;
+    --text-light-gray: #949AA6;
+}
+
+/* HTML TAGS */
+body {
+    background-color: var(--bg-dark-gray);
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+}
+
+h3 {
+    color: var(--text-light-gray);
+    font-size: 18pt;
+    font-weight: 300;
+    margin-bottom: 1vh;
+}
+
+h4 {
+    color: var(--text-dark-gray);
+    font-size: 12pt;
+    font-weight: 300;
+    margin-top: 0;
+}
+
+/* IDS */
+#footer {
+    background-color: var(--bg-dark-gray);
+    color: white;
+    padding: 10vh;
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* CLASSES */
+.about {
+    padding: 22vh 12vw;
+}
+
+.about-text {
+    color: white;
+    font-size: 22pt;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.wrapper {
+    background-color: var(--bg-light-gray);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pics {
+    width: 600px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 2vw;
+    width: 600px;
+}
+
+.profile-text {
+    font-size: 10pt;
+    line-height: 2em;
+    margin-top: 0;
+    padding-right: 1vw;
+}
+
+.video-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.video-desktop {
+    height: auto;
+    max-width: 100%;
+}
+
+.video-mobile {
+    display: none;
+}
+
+/* RESPONSIVE RULES */
+
+/* Images and texts size adjustments breakpoint */
+@media screen and (max-width: 500px) {
+    #footer {
+        font-size: 10pt;
+    }
+
+    .about-text {
+        font-size: 12pt !important;
+    }
+
+    .pics, .profile {
+        max-width: 300px;
+    }
+
+    .profile {
+        padding-top: 5vh;
+        padding-bottom: 1vh;
+    }
+
+    .wrapper {
+        padding-top: 8vh;
+        padding-bottom: 8vh;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .about-text {
+        font-size: 14pt;
+    }
+}
+
+/* Video switch breakpoint */
+@media screen and (max-width: 1090px) {
+    .video-mobile {
+        display: inline-block;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .video-desktop {
+        display: none;
+    }
+}
+
+/* Images and texts size adjustments breakpoint */
+@media screen and (max-width: 1320px) {
+    .about-text {
+        font-size: 18pt;
+    }
+
+    .pics, .profile {
+        width: 450px;
+    }
+}
