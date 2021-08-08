@@ -2,7 +2,7 @@
 Theme Name: Ailors Wordpress Theme.
 Theme URI: https://ailors.com/
 Description: Theme created exclusively for Ailors.
-Version: 2.0
+Version: 3.0
 Author: Marina Barcelos
 Author URI: https://marinabrcls.github.io/
 */
@@ -121,7 +121,7 @@ h4 {
 /* RESPONSIVE RULES */
 
 /* Mobile */
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
     #footer {
         font-size: 10pt;
     }
@@ -131,12 +131,13 @@ h4 {
     }
 
     .pics, .profile {
-        max-width: 300px;
+        width: 300px;
+        height: auto;
     }
 
     .profile {
-        padding-top: 5vh;
-        padding-bottom: 1vh;
+        display: flex;
+        flex-direction: column;
     }
 
     .video-mobile {
@@ -150,15 +151,25 @@ h4 {
     }
 
     .wrapper {
-        padding-top: 8vh;
-        padding-bottom: 8vh;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
     }
 }
 
 /* Video switch breakpoint */
-@media screen and (min-width: 681px) and (max-width: 1090px) {
+@media screen and (min-width: 601px) and (max-width: 1000px) {
     .about-text {
         font-size: 14pt;
+    }
+
+    .pics, .profile {
+        width: 450px;
+        height: auto;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
     }
 
     .video-mobile {
@@ -173,7 +184,7 @@ h4 {
 }
 
 /* Images and texts size adjustments breakpoint */
-@media screen and (min-width: 1091px) and (max-width: 1320px) {
+/* @media screen and (min-width: 1091px) and (max-width: 1325px) {
     .about-text {
         font-size: 18pt;
     }
@@ -181,4 +192,4 @@ h4 {
     .pics, .profile {
         width: 450px;
     }
-}
+} */
