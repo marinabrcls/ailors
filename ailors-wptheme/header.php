@@ -15,11 +15,9 @@
     <!-- Video -->
     <div id="header">
         <div class="video-container">
-            <video autoplay muted loop class="video-desktop">
-                <source src="https://ailors.com/wp-content/uploads/2021/08/Ailors_Horizontal_Mute.mp4" type="video/mp4">
+            <video playsinline autoplay muted loop class="video-desktop">
+                <source src="https://ailors.com/wp-content/uploads/2021/08/Ailors_Horizontal.mp4" type="video/mp4">
             </video>
-            <video autoplay muted loop class="video-mobile">
-                <source src="https://ailors.com/wp-content/uploads/2021/08/Ailors_Vertical_Mute.mp4" type="video/mp4">
-            </video>
+            <img class="video-mobile" src="https://marinabrcls.github.io/ailors/assets/Ailors_Vertical_Mute.gif" />
         </div>
     </div>
