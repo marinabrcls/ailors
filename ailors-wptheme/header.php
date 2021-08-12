@@ -18,6 +18,6 @@
             <video playsinline autoplay muted loop class="video-desktop">
                 <source src="https://ailors.com/wp-content/uploads/2021/08/Ailors_Horizontal.mp4" type="video/mp4">
             </video>
-            <img class="video-mobile" src="https://marinabrcls.github.io/ailors/assets/Ailors_Vertical_Mute.gif" />
+            <img class="video-mobile" src="https://marinabrcls.github.io/ailors/assets/Ailors_Vertical_Compressed.gif" />
         </div>
     </div>
